@@ -5,20 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <div class="container">
       <div class="nav">
-        <!-- <div class="logo">
-          <title>Cambodia</title>
+        <div class="logo">
+          <h1>Cambodia</h1>
         </div>
         <div class="responsive-nav">
           <ul class="nav-center">
-            <li><a href=""></a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Capital</a></li>
+            <li><a href="">City</a></li>
+            <li><a href="">Province</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
           </ul>
-          <nav-right></nav-right>
+          <div class="nav-right">
+            <div class="input-box">
+              <input type="text" name="" id="" />
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <i class="fa-solid fa-user"></i>
+          </div>
         </div>
-      </div> -->
+        <div class="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+      <div class="background-img">
+        <!-- <img src="./img/old-school.jpg" alt="" /> -->
+      </div>
     </div>
+    <div class="hi"></div>
+    <script>
+      const ham = document.querySelector(".hamburger");
+      const act = document.querySelector(".responsive-nav");
+      ham.addEventListener("click", function (e) {
+        act.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
